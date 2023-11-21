@@ -1,0 +1,198 @@
+	/*네이밍*/
+.store_me{color:#00bdd4}
+
+*{margin:0;padding:0;}
+ul li{list-style:none;}
+.store_layout ul {
+list-style: none;
+}
+a{text-decoration: none;}
+#totla_store{
+position:absolute;
+top:0;
+z-index:999;
+width:400px;
+background:#fff;
+border-radius:10px 10px 10px 10px;
+top: 5%;
+left:3%;
+}
+
+#tab-list-store{background:#00bdd4;height:75px;border-radius:12px 12px 0px 0px;}
+#tab-list-store ul{cursor:pointer;}
+#tab-list-store ul li{width:100%;font-size:13px;}
+#tab-list-store ul li:nth-child(1){margin-top:5px;}
+#tab-list-store ul li:nth-child(2){font-size:14px;font-weight:600;}
+
+#tab-list-store div{float:left;width:25%;text-align:center;height:75px;color:#fff;}
+#tab-list-store div:first-child{border-radius:11px 0px 0px 0px;}
+#tab-list-store div:last-child{border-radius:0px 11px 0px 0px;}
+#tab-list-store div:not(:last-child)::before {
+content: '';
+display: inline-block;
+width: 1px;
+height: 10px;
+background-color: #fff;
+vertical-align: top;
+position: absolute;
+margin-left: 48px;
+margin-top: 29px;
+display:none;
+}
+.active{background:#fff;color:#111!important;}
+
+.store_layout{
+position: relative;
+width: 90%;
+margin:0 auto;
+margin-bottom: 20px;
+background: #fff;
+border-radius: 12px;
+box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+overflow: hidden;
+margin-top:20px;
+}
+.store_inner_wrapper{
+background:#f7f7f7;
+position:relative;
+display:inline-block;
+width:100%;
+height:500px;
+
+overflow:scroll;
+overflow-x:hidden;
+}
+
+/*서치바 공간*/
+.search_w_bar{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.search_w_bar input[type="text"]{
+    width:80%;
+    margin-left:20px;
+    border:none;
+    height:35px;
+    line-height:40px;
+    font-size:14px;
+}
+.search_w_bar input[type="text"]:focus
+{
+    outline: none; 
+    box-shadow: none;
+}
+.search_inner{
+    width:90%;
+    margin:0 auto;
+    height:40px;
+    border:1px solid #CCCCCC;
+    border-radius:6px;
+}
+#searchButton{
+    position:absolute;
+    top:92px;;right:28px;
+}
+
+
+.store_layout dl{
+    width:100%;
+    padding:20px;
+    position:relative;
+    display:inline-block
+}
+.keyword{
+    position:absolute;
+    top:0;
+    opacity:0;
+    z-index:-1px;
+}
+.store_layout dt {
+    width:195px;
+    font-weight:600;
+    font-size:18px;
+}
+.store_layout dd {
+    width:195px;
+    margin-top:20px;
+    line-height:1.5;
+    font-size:14px;
+}
+.store_layout dd:nth-child(2){
+    margin-top:10px;
+}
+.store_layout dd ul li{
+    float:left;
+    width:100%;
+    vertical-align: middle;
+    margin-top:10px;
+}
+.store_layout dd ul li img{
+    vertical-align: middle;
+}
+.store_img{
+position: absolute;
+display: block;
+right: 60px;
+top: 24px;
+width: 80px;
+height: 80px;
+background: #ddd;
+border-radius: 6px;
+overflow: hidden;
+}
+.distance-k{
+    width:290px!important;
+    font-size:12px!important;
+    margin-left:5px;
+}
+
+#noResult ul{
+    text-align:center;
+    margin-top:120px;
+}
+#noResult ul li:nth-child(2){
+    margin-top:20px;
+}
+
+.store_layout{
+    cursor:pointer;
+}
+.store_layout a{
+    color:#111;
+}
+
+.btn-underline {
+    display: inline-block;
+    line-height: 1.27em;
+    margin: 0 4px;
+    font-size: 14px;
+    letter-spacing: -0.07px;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+#map_wrapper{
+    position:relative;
+}
+
+/*매장별 이미지*/
+#to-pyeongchon .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-hanam .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-wongsan .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-daejun .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-gocheok .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-ulsan .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-dongtan .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-gwanggyo .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-anseong .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-goyang .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-busan .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-daegu .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-kiheung .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-ansang .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-gwangbok .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-echeon .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-mia .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-changWon .store_img{background:url('/web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-inchenAir .store_img{background:url('/web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
+#to-goyang_pop .store_img{background:url('http://yogibo.kr//web/img/icon/map/yogibo_store.jpg')no-repeat; background-size:100%;border:1px solid #ededed}
